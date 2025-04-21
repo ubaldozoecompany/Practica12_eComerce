@@ -15,9 +15,9 @@ $text-align: center;
 } 
 @mixin select {
     cursor: pointer;
-    transition: all .2s ease;
+    transition: all .4s ease;
     &:hover {
-        transform: scale(1.09);
+        transform: scale(1.11);
     }
 }
 %button {
@@ -39,7 +39,7 @@ body {
     width: $width;
     font-size: 15px;
     font-weight: 300;
-    color: hsl(60, 9%, 7%);
+    color: hsl(60, 7%, 11%);
     margin: 0;
 }
 header {
@@ -95,13 +95,18 @@ header {
             margin-bottom: 15px;
         }
         h3 {
-            font-weight: 500;
-            font-size: 17px;
+            font-size: 40px;
             margin-bottom: 5px;
         }
         p {
             font-weight: 300;
             font-size: 15px;
+        }
+        h2 {
+            font-weight: 800;
+            font-size: 17px;
+            margin-bottom: 5px;
+            color: $mainColor
         }
         .main-button {
             @extend %button;
@@ -110,6 +115,16 @@ header {
         .car-button {
             @extend %button;
             background-color: hsl(60, 9%, 7%);
+        }
+        .ofert-button {
+            @extend %button;
+            color: $colorWhite;
+            background-color: $mainColor;
+        }
+        .ofcar-button {
+            @extend %button;
+            color: $colorWhite;
+            background-color: $mainColor;
         }
     }
 }

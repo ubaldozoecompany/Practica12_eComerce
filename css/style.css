@@ -1,4 +1,4 @@
-.productos article .car-button, .productos article .main-button {
+.productos article .ofcar-button, .productos article .ofert-button, .productos article .car-button, .productos article .main-button {
   display: block;
   border-radius: 30px;
   color: rgb(255, 255, 255);
@@ -7,10 +7,10 @@
   width: 50%;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
 }
-.productos article .car-button:hover, .productos article .main-button:hover {
-  transform: scale(1.09);
+.productos article .ofcar-button:hover, .productos article .ofert-button:hover, .productos article .car-button:hover, .productos article .main-button:hover {
+  transform: scale(1.11);
 }
 
 img {
@@ -21,7 +21,7 @@ body {
   width: 100%;
   font-size: 15px;
   font-weight: 300;
-  color: hsl(60, 9%, 7%);
+  color: hsl(60, 7%, 11%);
   margin: 0;
 }
 
@@ -37,11 +37,11 @@ header {
 header i {
   width: 50px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.4s ease;
   display: inline-block;
 }
 header i:hover {
-  transform: scale(1.09);
+  transform: scale(1.11);
 }
 header i img {
   width: 100%;
@@ -87,19 +87,32 @@ header i img {
   margin-bottom: 15px;
 }
 .productos article h3 {
-  font-weight: 500;
-  font-size: 17px;
+  font-size: 40px;
   margin-bottom: 5px;
 }
 .productos article p {
   font-weight: 300;
   font-size: 15px;
 }
+.productos article h2 {
+  font-weight: 800;
+  font-size: 17px;
+  margin-bottom: 5px;
+  color: rgb(252, 8, 0);
+}
 .productos article .main-button {
   background-color: hsl(60, 9%, 7%);
 }
 .productos article .car-button {
   background-color: hsl(60, 9%, 7%);
+}
+.productos article .ofert-button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(252, 8, 0);
+}
+.productos article .ofcar-button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(252, 8, 0);
 }
 
 .cart {
